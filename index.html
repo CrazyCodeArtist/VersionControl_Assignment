@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Simple Home Page</title>
+    <title>My Tailwind Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-    <header>
-        <h1>Welcome to My Home Page</h1>
-        <p>This is a simple homepage created using HTML only.</p>
+    <header class="bg-white shadow p-6 text-center">
+        <h1 class="text-3xl font-bold">Welcome to My Home Page</h1>
+        <p class="mt-2 text-gray-600">Simple. Clean. Built with Tailwind CSS.</p>
     </header>
 
-    <nav>
-        <h3>Navigation</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav class="bg-gray-900 text-white p-4">
+        <ul class="flex justify-center gap-6">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h2>About This Page</h2>
-        <p>This page is a basic example of a static website layout made without CSS or JavaScript.</p>
-    </section>
+    <main class="max-w-3xl mx-auto mt-8 space-y-8">
 
-    <section>
-        <h2>Featured Content</h2>
-        <p>You can add text, images, or links here — whatever you want to display.</p>
-    </section>
+        <section class="bg-white p-6 rounded-xl shadow">
+            <h2 class="text-2xl font-semibold mb-2">About This Page</h2>
+            <p>This is a lightweight homepage styled using Tailwind — no messy CSS files, just utility classes doing their magic.</p>
+        </section>
 
-    <footer>
-        <p>© 2026 My Website — All Rights Reserved</p>
+        <section class="bg-white p-6 rounded-xl shadow">
+            <h2 class="text-2xl font-semibold mb-2">Featured Content</h2>
+            <p>Add your text, images, or links here. Customize it however you like.</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center mt-10 p-4 text-gray-600">
+        © 2026 My Website — All Rights Reserved
     </footer>
 
 </body>
